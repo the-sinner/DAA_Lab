@@ -28,9 +28,9 @@ int main()
                 break;
             }
             else if(++cnt && v[mid] > x)
-                l = m+1;
+                r = mid-1;
             else
-                r = m-1;
+                l = mid+1;
         }
         if(!flag)
             cout<<"Not Present "<<cnt<<endl;

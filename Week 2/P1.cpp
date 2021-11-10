@@ -23,29 +23,29 @@ int main()
         {
             mid = (l+r)/2;
 
-            if(v[m] == x)
+            if(v[mid] == x)
             {
-                first = m;
-                l = m-1;
+                first = mid;
+                r = mid-1;
             }
-            else if(v[m]<x)
-                r= m-1;
+            else if(v[mid]>x)
+                r= mid-1;
             else
-                l = m+1;
+                l = mid+1;
         }
         while(l<=r)
         {
             mid = (l+r)/2;
 
-            if(v[m] == x)
+            if(v[mid] == x)
             {
-                last = m;
-                r = m+1;
+                last = mid;
+                l = mid+1;
             }
-            else if(v[m]<x)
-                r= m-1;
+            else if(v[mid]>x)
+                r= mid-1;
             else
-                l = m+1;
+                l = mid+1;
         }
 
         if(last == -1 && first == -1)
