@@ -95,6 +95,6 @@ int main()
 
     // Print the solution
     cout<<"Minimum Spanning Weight : "<<primMST_mod(V, g)<<endl;
-
+    free(g);
     return 0;
 }
