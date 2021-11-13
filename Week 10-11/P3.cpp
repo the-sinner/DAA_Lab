@@ -27,7 +27,7 @@ int main()
             temp = x.first;
         }
     }
-    cout<<(flag?"Yes":"No");
+    cout<<(flag?"Yes\n":"No\n");
     if(!flag)
     {
         sort(arr,arr+n);
