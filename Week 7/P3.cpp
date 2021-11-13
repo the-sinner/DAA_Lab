@@ -1,8 +1,6 @@
 #include <iostream>
 #include <limits.h>
-#include <cstring>
-#include <stdio.h>
-#include <string.h>
+
 using namespace std;
 
 // Define number of vertices in the graph and infinite value
